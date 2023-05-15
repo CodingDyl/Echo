@@ -1,0 +1,11 @@
+Model Information:
+* title:	Military Trailer
+* source:	https://sketchfab.com/3d-models/military-trailer-b21a05025472417c8dc06e31c2481dfb
+* author:	merlin_53 (https://sketchfab.com/merlin_53)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Military Trailer" (https://sketchfab.com/3d-models/military-trailer-b21a05025472417c8dc06e31c2481dfb) by merlin_53 (https://sketchfab.com/merlin_53) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
