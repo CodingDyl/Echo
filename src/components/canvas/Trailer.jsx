@@ -13,8 +13,8 @@ const Trailer = ({ isMobile }) => {
       <spotLight position={[-20, 50, 10]} angle={0.12} penumbra={1} intensity={1} castShadow shadow-mapSize={1024}/>
       <primitive
         object={trailer.scene}
-        scale={isMobile ? 0.055 : 0.06}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
+        scale={isMobile ? 0.03 : 0.06}
+        position={isMobile ? [0, -2, 0] : [0, -3.25, -3]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
