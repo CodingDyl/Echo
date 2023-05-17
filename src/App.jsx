@@ -1,6 +1,6 @@
 import React from "react"
 import { BrowserRouter } from "react-router-dom";
-import Home from "./components/Home";
+import { Home, Navbar, Contact, Footer } from "./components";
 
 function App() {
 
@@ -8,8 +8,11 @@ function App() {
     <BrowserRouter>
     <div className="relative z-0 bg-tertiary">
       <div className="bg-pattern bg-cover bg-no-repeat bg-center">
+        <Navbar/>
         <Home />
       </div>
+      <Contact />
+      <Footer />
     </div>
     </BrowserRouter>
   )

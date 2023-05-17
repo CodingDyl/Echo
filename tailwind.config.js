@@ -17,6 +17,7 @@ export const theme = {
     },
     backgroundImage: {
       "pattern": "url('/src/assets/peaks.svg')",
+      "contact": "url('/src/assets/contact.png')",
     },
   },
 };
