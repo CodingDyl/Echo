@@ -1,4 +1,6 @@
 import React, {useRef, useState} from 'react';
+import Lottie from 'lottie-react';
+import animation from '../assets/contactAnimation.json'
 
 import { motion } from 'framer-motion';
 
@@ -72,8 +74,8 @@ const Contact = () => {
         <h2 className={styles.sectionHeadText}>Contact.</h2>
     </motion.div>
 
-    <motion.div variants={slideIn("left", "tween", 0.2, 1)} className="flex justify-center items-center bg-contact border-2 border-secondary backdrop-blur-md p-8 rounded-2xl">
-        <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8 w-[50%]">
+    <motion.div variants={slideIn("left", "tween", 0.2, 1)} className="flex justify-center items-center">
+        <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex-col gap-8 bg-contact p-10 border-secondary border-4 rounded-lg w-full">
         <label className='flex flex-col'>
             <span className='text-tertiary font-bold mb-4'>Your Name</span>
             <input
@@ -82,7 +84,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your name?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium mb-4'
             />
           </label>
           <label className='flex flex-col'>
@@ -93,7 +95,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your email address?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium mb-4'
             />
           </label>
           <label className='flex flex-col'>
@@ -104,7 +106,7 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder='Just want to chat? write me a message...'
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium mb-4'
             />
           </label>
 
@@ -115,6 +117,8 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
+
+        <Lottie animationData={animation} />
 
     </motion.div>
 
